@@ -1,0 +1,60 @@
+body {
+    background-color: #e9ebee;
+    color: #1d2129;
+}
+
+#content{
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+/** Status Box CSS */
+.status-box {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+
+}
+.status-box > img {
+    width: 50px;
+    padding-bottom: 5px;
+}
+
+.status-box textarea{
+    resize: none;
+    width: 80%;
+}
+.status-box > button {
+    background-color: #334F8D;
+    color: #ffffff;
+}
+
+/** Feed Item */
+.feed-item {
+    margin-top: 12px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+}
+
+.feed-item h3{
+    color: #365899;
+    font-size: 14px;
+    vertical-align: top;
+    display: inline;
+}
+.feed-item .thumbnail{
+    width: 50px;
+}
+
+.feed-item .feed-content{
+    margin-top: 6px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 12px;
+}
+
+.feed-item .feed-actions{
+    padding-bottom: 4px;
+    padding-top: 4px;
+}

@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float Example</title>
+    <style>
+        .box{
+            width: 300px;
+            border: solid 1px;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Float</h1>
+    <div class="float-left box">I float left, i need to stick to the left edge</div>
+    <div class="float-left box">I float left, but i'll stick to the float before me</div>
+    <div class="float-right box">I float right, i need to stick to the right edge</div>
+
+    <h2>I just wanted to be normal block, but i don't have any clear before me, so i am messed up </h2>
+    <div class="clear">i am a div with clear:both, i'll fix it!</div>
+    <h2>Phew.. out of this maddnes</h2>
+</body>
+</html>

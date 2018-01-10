@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Example</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 200px;;
+            border: solid 1px;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: brown;
+            color: white;
+            padding: 15px;
+        }
+        .border-box{
+            box-sizing: border-box;
+        }
+        .inner-100{
+            color: black;
+            height: 100%;
+            background-color: gray;
+        }
+        .overflow-hidden{
+            overflow: hidden;
+        }
+        .overflow-scroll{
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <h2>Box Sizing:</h2>
+    <p>Notice the different behaivour of the same width & height settings (400px X 200px).</p>
+    <div class="box">box-sizing: content-box (default), actual (432px X 232px) </div>
+    <div class="box border-box">box-sizing: border-box, actual (400px X 200px)</div>  
+    <div class="sepeartor"></div>
+    <h2>Height & Overflow</h2> 
+    <div class="box">
+        <div class="inner-100">
+            100% OF THE PARENT HEIGHT not including the padding.
+        </div>
+    </div>
+    <div class="box">
+                Some text
+            <div class="inner-100">
+                Will cause overflow beacuse of the text above
+            </div>
+    </div>
+    <div class="box overflow-hidden">
+            Some text
+        <div class="inner-100">
+            Overflow hidden, will cut the background at the of the parent.
+        </div>
+    </div>
+    <div class="box overflow-scroll">
+            Some text
+        <div class="inner-100">
+            Overflow scroll, inner scroll.
+        </div>
+    </div>
+</body>
+</html>

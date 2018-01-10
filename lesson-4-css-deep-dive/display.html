@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Example</title>
+    <style>
+        .block{
+            display: block;
+            border: solid 1px;
+        }
+        .block-narrow{
+            width: 150px;
+        }
+
+        .inline{
+            display: inline;
+            border: 1px solid;
+        }
+        .height-150{
+            height: 150px;
+            border: 1px solid;
+        }
+        .inline-block{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Block</h1>
+    <p>Each element is taking the whole row, regardless of it width.</p>
+    <div class="block">I am a block I take the whole row</div>
+    <div class="block block-narrow">I am only 150px but i still take full row</div>  
+    <div class="block block-narrow">I am 150px as well, but I don't have place above because it takes the whole row, and i take full row too</div>  
+    <h1>Display Inline</h1>
+    <div class="inline">I am inline so other can be with me on the same line</div>
+    <div class="inline">inline too, so i am next to the other one</div>
+    <div class="inline height-150">inline too,I have height 150px, but it not affecting me beacuse I am inline :(</div>
+    <h1>Display inline-block</h1>
+    <div class="height-150 inline-block">Inline Block</div>
+    <div class="height-150 inline-block">Inline Block</div>
+    <div class="height-150 inline-block">Inline Block</div>
+
+</body>
+</html>

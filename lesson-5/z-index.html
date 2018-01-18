@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 150px;
+        }
+        .static{
+            background-color: yellow;
+
+        }
+    .absolute{
+        background-color: blueviolet;
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+    .a1 {
+        z-index: 9999999;
+    }
+    div {
+        width: 150px;
+        height: 150px;
+    }
+    </style>
+</head>
+<body>
+    <div class="static">
+        static
+    </div>
+    <div class="absolute a1">
+        absolute
+    </div>
+    <div  class="absolute">
+            absolute 2
+        </div>
+</body>
+</html>

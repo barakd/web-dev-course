@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positions</title>
+    <style>
+        body{
+            padding-top: 300px;
+        }
+        div {
+            margin: 10px;
+        }
+        div.relative{
+            background-color: orange;
+            position: relative;
+        }
+        .absolute{
+            left: 0px;
+            top: 0;
+            position: absolute;
+        }
+        .box-1{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        }
+        .centerish{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        header{
+            padding: 25px;
+            position: fixed;
+            top: 0;
+            height: 100px;
+            background-color:violet;
+            color: white;
+            width: 100%
+        }
+        .monkey{
+            font-size: 65px;
+            position: absolute;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>BOX</div>
+    <div>BOX</div>
+    <div>BOX</div>
+    <div>BOX</div>
+    <div>BOX</div>  
+    <div class="absolute">Absolute 1</div>
+    <div class="box-1">
+            <div class="absolute">Absolute 2 - in non realtive</div>
+    </div>  
+    <div class="relative box-1">
+            <div class="absolute">BOX 1</div>
+    </div>  
+
+    <div class="box-1 absolute">
+        <div class="absolute centerish">center me via position</div>
+    </div>
+    <header>Talking about position <span class="monkey">🙊</span></header>
+</body>
+</html>

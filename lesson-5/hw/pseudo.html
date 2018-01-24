@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            width: 50%;
+        }
+        p::first-letter{
+         text-transform: uppercase;
+         font-size: 25px;
+         font-weight: bold;
+        }
+        p::first-line{
+            color: brown;
+        }
+        p{
+            border: solid 1px black;
+            padding: 10px;
+        }
+        #read:checked + label{
+            color: green;
+            font-weight: bold;
+        }
+        p::selection{
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit dolor minus consequuntur rem quaerat praesentium ipsum, temporibus quos obcaecati, suscipit tempore. Dolores quisquam qui sequi, quo repellendus ipsum eum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit dolor minus consequuntur rem quaerat praesentium ipsum, temporibus quos obcaecati, suscipit tempore. Dolores quisquam qui sequi, quo repellendus ipsum eum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit dolor minus consequuntur rem quaerat praesentium ipsum, temporibus quos obcaecati, suscipit tempore. Dolores quisquam qui sequi, quo repellendus ipsum eum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit dolor minus consequuntur rem quaerat praesentium ipsum, temporibus quos obcaecati, suscipit tempore. Dolores quisquam qui sequi, quo repellendus ipsum eum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit dolor minus consequuntur rem quaerat praesentium ipsum, temporibus quos obcaecati, suscipit tempore. Dolores quisquam qui sequi, quo repellendus ipsum eum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit dolor minus consequuntur rem quaerat praesentium ipsum, temporibus quos obcaecati, suscipit tempore. Dolores quisquam qui sequi, quo repellendus ipsum eum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit dolor minus consequuntur rem quaerat praesentium ipsum, temporibus quos obcaecati, suscipit tempore. Dolores quisquam qui sequi, quo repellendus ipsum eum.        
+    </p>
+    <div>
+        <input id="read" type="checkbox"/> <label for="read">I agree to the terms</label>
+    </div>
+</body>
+</html>

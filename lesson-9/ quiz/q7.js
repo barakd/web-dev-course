@@ -1,13 +1,8 @@
-const myBook = {
-    title: 'my awesome book',
-};
+let message = 'hello world!';
 
-
-function reNameBook(book, newName) {
-    book.title = newName;
+function changeMessage(message, newMessage) {
+    message = newMessage;
 }
+changeMessage('what what?')
 
-
-reNameBook(myBook, 'new book!');
-
-console.log(myBook);
+console.log(message);
